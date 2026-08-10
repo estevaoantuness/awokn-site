@@ -1,0 +1,31 @@
+/* Páginas de texto do awokn.app: identidade clara do app (DesignTokens). */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+:root {
+  --bg: #EDEDEB;
+  --ink: #111111;
+  --muted: #555555;
+  --faint: #8F8D88;
+}
+@media (prefers-color-scheme: dark) {
+  :root { --bg: #0E0D0B; --ink: #F5F5F3; --muted: #A8A5A0; --faint: #6E6C67; }
+}
+body {
+  background: var(--bg);
+  color: var(--ink);
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  line-height: 1.65;
+}
+.wrap { max-width: 41rem; margin: 0 auto; padding: 2.2rem 1.4rem 4rem; }
+.brand { display: inline-flex; align-items: center; gap: .55rem; text-decoration: none; color: var(--ink); margin-bottom: 3rem; }
+.brand img { width: 30px; height: 30px; border-radius: 8px; display: block; }
+.brand span { font-weight: 800; font-size: .95rem; letter-spacing: -0.02em; }
+h1 { font-size: 2rem; font-weight: 800; letter-spacing: -0.03em; line-height: 1.1; margin-bottom: .5rem; }
+.updated { color: var(--faint); font-size: .85rem; margin-bottom: 2.2rem; }
+h2 { font-size: 1.15rem; font-weight: 700; letter-spacing: -0.015em; margin: 2rem 0 .5rem; }
+p, li { color: var(--muted); font-size: 1rem; }
+ul { padding-left: 1.2rem; display: grid; gap: .35rem; margin: .4rem 0; }
+strong { color: var(--ink); font-weight: 650; }
+a { color: var(--ink); }
+.foot { margin-top: 3.5rem; padding-top: 1.2rem; border-top: 1px solid rgba(127,127,127,.25); font-size: .82rem; color: var(--faint); }
+.foot a { color: var(--faint); }
